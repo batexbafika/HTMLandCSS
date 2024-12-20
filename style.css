@@ -1,3 +1,102 @@
 body{
    background-color: #f4f4f4; 
+   margin: 0px;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   overflow-x: hidden;
+}
+main{
+   background-color: white;
+   border-radius: 2% 2% 0% 0%;
+   padding-left: 14px;
+   padding-bottom:14px;
+   overflow: hidden;
+   margin:2%;
+}
+h1,h2,h3,h4{
+   color:#09ba30;
+   line-height: 0.5;
+   padding-top: 5%;
+}
+.profile{
+   display: grid;
+   justify-content: center;
+   justify-items: center;  
+}
+table>thead{
+   background-color: #09ba30;
+   color:white;
+}
+table{
+   width:100%;
+   border-collapse: collapse;
+}
+img{
+  border-radius:50% 50%;
+}
+
+nav{
+   background-color:#09ba30;
+   padding: 8px;   
+}  
+
+nav>ul{
+   list-style-type:none;
+   display: grid;
+   grid-template-columns: 0.1fr 0.1fr;
+   padding:0px;
+   justify-content: center;
+   justify-items: center;
+   column-gap: 30px;
+}
+ul>li>a{
+   color:white;
+   text-decoration: none;
+}
+
+.feedback{
+   width:95%;
+   padding-left: 10px;
+}
+#feedback{
+   width:100%;
+}
+
+input,textarea{
+   width:100%;
+}
+#buton{
+   background-color: #09ba30;
+   border:0 solid transparent;
+   color:white;
+   border-radius:4px 4px;
+}
+footer{
+   background-color: rgb(81, 81, 81);
+   text-align: center;
+   color:white;
+}
+.footer-border{
+   border-top:1dvb solid #09ba30;
+}
+footer>p,.space{
+ padding-bottom:4dvb;
+}
+#btm{
+  background-color:white;
+  height: 20px;
+}
+
+.forms{
+   display:inline-block;
+}
+input[type="submit"]{
+   background-color: #09ba30;
+   border-radius:1dvb 1dvb;
+   font-size:20px;
+   border-color:transparent;
+   color:white;
+}
+input[type="text"],input[type="email"],textarea{
+   border-radius:0.2em 0.2em;
+   font-size:20px;
 }

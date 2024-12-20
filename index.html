@@ -7,14 +7,23 @@
     <link href="style.css" rel="stylesheet">
     <title>Profile page</title>
 </head>
-<body>
-    <h1>Personal profiles</h1>
-    <h2>John Doe</h2>
+<body  id="home">
+    <nav>
+        <ul>
+            <li id="topmenu"><a  href="#home">Home</a></li>
+            <li id="topmenu"><a  href="#About">About</a></li>
+        </ul>
+    </nav>
 
+    <main>
+    <h2>Personal profiles</h2>
+    <h4>John Doe</h4>
+
+    <section class="profile">
     <img src="https://via.placeholder.com/150" alt="Profile image">
-
+   </section>
 <!--Contact Section-->
-    <h3>Contact Information</h3>
+    <h4>Contact Information</h4>
     <table border="1">
         <thead>
             <th>Contact type</th>
@@ -24,7 +33,7 @@
         <tbody>
             <tr>
             <td>Email</td>
-            <td>johndoe@example.com</td>
+            <td>Batex@example.com</td>
             </tr>
 
             <tr>
@@ -36,11 +45,11 @@
     </table>
 
     <!--Biography section-->
-    <h3>Biography</h3>   
+    <h4 id="About">Biography</h4>   
     <p>Hey My name is John Doe and i am a medical doctor with passion to save lives. During
     my leasure time, i enjoy watcing action movies and novelas.</p>
     
-    <h3>Favorite Websites</h3>
+    <h4>Favorite Websites</h4>
     <ol>
         <li><a href="www.netflix.com"> Netflix </a></li>
         <li><a href="www.Youtube.com"> Youtube </a></li>
@@ -49,7 +58,7 @@
     </ol>
 
     <!---Skill section-->
-    <h3>Skills </h3>
+    <h4>Skills </h4>
     <ul>
         <li>Patient Examination</li>
         <li>Diagnosis</li>
@@ -57,26 +66,76 @@
     </ul>
   
     <!---Feedback Form section-->
-    <h3>Feedback Form</h3>
-    <form>
+    <h4>User Feedback</h4>
+    <section class="feedback">
+      <form action="" method="POST">
+        
         <label for ="name">Name:<input type="text"></label><br><br>
-        <label for ="email">Email:<input type="email" placeholder="JohnDoe@gamil.com"></label><br><br>
-        <label for ="gender">Gender:<input type="radio">Male <input type="radio">Female</label><br>
-        <label for ="Hobbies">Gender:<input type="checkbox">Movie <input type="checkbox">Games <input type="checkbox">Sports</label><br><br>
-         
-        <!--Feedback textarea Section-->
-        <label for ="Feedback">Feedback:<br>
-            <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
-        </label><br><br>
+        <label for ="email">Email:<input type="email"></label><br><br>
+        
+        <h4>Gender:</h4>
+        <section class="gender">
+<!--Male-->
+            <div class="forms male">
+              <input type="radio" value="Male">
+            </div>
+            <span class="forms female">
+              <label for="femal" value="Female">Male:
+            </span><br>
 
-        <input id="buton" type="submit">
+<!--Female-->
+           <br> <div class="forms male">
+                <input type="radio" value="male">
+              </div>
+              <span class="forms female">
+                <label for="femal" value="female">Female:
+              </span>
+        </section>
+
+        <h4>Hobbies:</h4>
+        <section class="Hobbies">
+
+<!--Movies-->
+            <div class="forms male">
+                <input type="checkbox" value="movie">
+            </div>
+            <span class="forms female">
+                <label for="femal" value="Female">Movie
+            </span><br>
+
+<!--Travel-->
+            <br> <div class="forms male">
+                <input type="checkbox" value="travel">
+                </div>
+                <span class="forms female">
+                <label for="femal" value="female">Travel
+                </span><br>
+<!--Games-->
+            <br> <div class="forms male">
+                <input type="checkbox" value="travel">
+                </div>
+                <span class="forms female">
+                <label for="femal" value="female">Games
+                </span>
+  
+        </section><br>
+        <label for="comment">Feedback<br>
+        <textarea  type="text">
+        </textarea></label><br><br>
+       <input type="submit" value="Button">
+      
     </form>
+</section>
+</main>
 
     <!---Footer section-->
+    <div class="space"></div>
     <footer>
-        <p>&copy 2024 John Doe </p>
+        <div class="footer-border"></div>
+        <p>&copy 2024 Batex Bafika </p>
     </footer>
-
+ 
+    <div id="btm"></div>
 
 </body>
 </html>
